@@ -1,0 +1,16 @@
+[Unit]
+Description=unifi
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Restart=always
+Type=forking
+TimeoutSec=5min
+KillMode=process
+ExecStart=/usr/lib/unifi/bin/unifi.init start
+ExecStop=/usr/lib/unifi/bin/unifi.init stop
+ExecReload=/usr/lib/unifi/bin/unifi.init reload
+
+[Install]
+WantedBy=multi-user.target

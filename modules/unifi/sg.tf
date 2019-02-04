@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "unifi_sg" {
   name        = "UniFi Controller / UNMS"
   description = "Ubnt Cloud Controller"
   vpc_id      = "${var.aws_vpc_id}"
