@@ -8,6 +8,7 @@ terraform {
     bucket = "terraform.johnstonjacob.com"
     key    = "homelab/unifi-controller"
     region = "us-east-2"
+    profile = "self"
   }
 }
 

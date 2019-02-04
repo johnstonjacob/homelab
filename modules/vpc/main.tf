@@ -1,6 +1,6 @@
 provider "aws" {
     region = "us-east-2"
-    profile ="self"
+    profile = "self"
 }
 
 terraform {
@@ -8,6 +8,7 @@ terraform {
     bucket = "terraform.johnstonjacob.com"
     key    = "homelab/vpc"
     region = "us-east-2"
+    profile = "self"
   }
 }
 
